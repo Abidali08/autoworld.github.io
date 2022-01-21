@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="./CSS/style.css">
+  <title>AutoWorld</title>
+  <style>
+    .card {
+      width: 300px;
+      border-radius: 10px;
+      object-fit: cover;
+
+    }
+
+    .card .card-img-top {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-img-top {
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px
+    }
+
+    span.text-muted {
+      font-size: 12px
+    }
+
+    small.text-muted {
+      font-size: 8px
+    }
+
+    h5.mb-0 {
+      font-size: 1rem
+    }
+
+    small.ghj {
+      font-size: 12px;
+      margin-top: 5px;
+      font-weight: 500;
+      
+    }
+    .price{
+      font-weight: 500;
+    }
+
+    .mid {
+      background: #ECEDF1
+    }
+
+    h6.ml-1 {
+      font-size: 13px
+    }
+
+
+
+    .btn-danger {
+      color: #FFCBD2
+    }
+
+    .btn-danger:focus {
+      box-shadow: none
+    }
+
+    small.justify-content-center {
+      font-size: 9px;
+      cursor: pointer;
+      text-decoration: underline
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- header start -->
+  <div id="header"></div>
+
+  <script src="Js/header.js"></script>
+  <!-- header end -->
+
+  <div class="container-fluid p-3 bg-light">
+    <div class="search-heading">
+      <h1> SEARCH YOUR CAR</h1>
+      <hr class="line w-25 mx-auto">
+      <!-- <div class="line"></div> -->
+    </div>
+    <div class="">
+      <form class="p-3 ">
+        <div class="form-wrap ">
+          <div class="row pl-5 justify-content-center">
+            <!-- <div class="col-lg-2 col-md-2 col-sm-12">
+              <div class="form-group">
+                <label for="brand name ml-sm-5"><b>Brand Name :</b></label>
+                <select class="form-control" id="txtbrandname">
+                  <option selected> Select Brand Name</option>
+                  <option value="honda">Honda</option>
+                  <option value="toyota">Toyota</option>
+                  <option value="suzuki">Suzuki</option>
+                  <option value="Nissan">Hyundai</option>
+                </select>
+              </div>
+            </div> -->
+
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <div class="form-group">
+                  <label for="brand name ml-sm-5"><b>Brand Name :</b></label>
+                  <select class="form-control" id="txtbrandname">
+                    <option selected> Select Brand Name</option>
+                    <option value="honda">Honda</option>
+                    <option value="toyota">Toyota</option>
+                    <option value="suzuki">Suzuki</option>
+                    <option value="Nissan">Hyundai</option>
+                  </select>
+                </div>
+              </div>
+
+
+            <div class="col-lg-3 col-md-3 col-sm-12">
+              <div class="form-group">
+                <label for="car name"><b>Car Name :</b></label>
+                <select class="form-control" id="model">
+                  <option selected>Select Car</option>
+                  <option value="suzuki">Toyota Corolla</option>
+                  <option value="Supra">Toyota Supra</option>
+                  <option value="Revo">Toyota Revo</option>
+                  <option value="Camrey">Toyota Camrey</option>
+                  <option value="Carry">Toyota Fortuner</option>
+                  <option value="Vitz">Toyota Vitz</option>
+                  <option value="Crusire">Toyota Crusire</option>
+                  <option value="Ciaz">Suzuki Ciaz</option>
+                  <option value="Prius">Toyota Prius</option>
+                  <option value="Aqua">Toyota Aqua</option>
+                  <option value="Yaris">Toyota Yaris</option>
+                  <option value="Tundra">Toyota Tundra</option>
+                  <option value="Aqua">Toyota Aqua</option>
+                  <option value="Cross">Toyota Cross</option>
+                  <option value="Passo">Toyota Passo</option>
+
+                </select>
+              </div>
+            </div>
+
+
+            <div class="col-lg-3 col-md-3 col-sm-12">
+              <div class="form-group">
+                <label for="year"><b>Select Year :</b></label>
+                <select class="form-control" id="year">
+                  <option selected>Select Year</option>
+                  <option value="21">2021</option>
+                  <option value="20">2020</option>
+                  <option value="19">2019</option>
+                  <option value="18">2018</option>
+                  <option value="17">2017</option>
+                  <option value="16">2016</option>
+                  <option value="15">2015</option>
+                  <option value="14">2014</option>
+                  <option value="13">2013</option>
+                  <option value="12">2012</option>
+                  <option value="11">2011</option>
+                  <option value="10">2010</option>
+                  <option value="9">2009</option>
+                  <option value="8">2008</option>
+                  <option value="7">2007</option>
+                  <option value="6">2006</option>
+                  <option value="5">2005</option>
+                  <option value="4">2004</option>
+                  <option value="3">2003</option>
+                  <option value="2">2002</option>
+                  <option value="1">2001</option>
+                  <option value="00">2000</option>
+                  <option value="01">1999</option>
+                  <option value="02">1998</option>
+                  <option value="03">1997</option>
+                  <option value="04">1996</option>
+                  <option value="05">1995</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-sm-12 mt-auto">
+              <div class="form-group w-75">
+                <button type="search" class="btn btn-primary btn-block">Search</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="container">
+    <div class="container text-justify ">
+      <h1 class="text-center pt-3"><b>Sedan Cars</b></h1>
+      <hr class="line w-25 mx-auto">
+     
+    </div>
+  </div>
+
+
+
+  <div class="container d-flex justify-content-center">
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 my-3">
+            <div class="card"> <img src="./Img/honda/honda city aspire 1.5.jpg" class="card-img-top" width="100%">
+              <div class="card-body pt-0 px-0">
+               
+                
+                  <div class=" justify-content-between p-2">
+                   <h4>Honda City Aspire 1.5</h4>
+                   <span class="price">STARTING FROM PKR. 3,174,000 /-</span>
+                    
+                  </div>
+                  <div class="d-flex flex-row justify-content-between p-3 mid">
+                      <div class="d-flex flex-column"><small class="text-muted mb-1">ENGINE</small>
+                          <div class="d-flex flex-row"><img src="https://imgur.com/iPtsG7I.png" width="35px" height="25px">
+                              <div class="d-flex flex-column ml-1"><small class="ghj">SOHC i-VTEC, 4-cylinder</small></div>
+                          </div>
+                      </div>
+                      <div class="d-flex flex-column"><small class="text-muted mb-2">HORSEPOWER</small>
+                          <div class="d-flex flex-row"><img src="https://imgur.com/J11mEBq.png">
+                              <h6 class="ml-1">118 hp&ast;</h6>
+                          </div>
+                      </div>
+                  </div> 
+                  <div class="mx-3 mt-3 mb-2"><button type="button" class="btn btn-danger btn-block"><small>SPECIFICATION</small></button></div>
+              </div>
+          </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 my-3">
+            <div class="card"> <img src="./Img/toyota/corolla x.jpg" class="card-img-top" width="100%">
+              <div class="card-body pt-0 px-0">
+    
+    
+                <div class=" justify-content-between p-2">
+                  <h4>Corolla Altis X</h4>
+                  <span class="price">STARTING FROM PKR. 3,585,000 /-
+                  </span>
+    
+                </div>
+                <div class="d-flex  justify-content-between p-3 mid">
+                  <div class="d-flex flex-column"><small class="text-muted mb-1">ENGINE</small>
+                    <div class="d-flex flex-row"><img src="https://imgur.com/iPtsG7I.png" width="35px" height="25px">
+                      <div class="d-flex flex-column ml-1"><small class="ghj">1800 cc</small></div>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-column"><small class="text-muted mb-2">HORSEPOWER</small>
+                    <div class="d-flex flex-row"><img src="https://imgur.com/J11mEBq.png">
+                      <h6 class="ml-1">138 hp&ast;</h6>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="mx-3 mt-3 mb-2"><button type="button" class="btn btn-danger btn-block"><small>SPECIFICATION</small></button></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 my-3">
+            <div class="card"> <img src="./Img/suzuki/Ciaz 2021.jpg" class="card-img-top" width="100%">
+                <div class="card-body pt-0 px-0">
+                 
+                  
+                    <div class=" justify-content-between p-2">
+                     <h4>Suzuki Ciaz</h4>
+                     <span class="price">STARTING FROM PKR. 2,300,000 /-</span>
+                      
+                    </div>
+                    <div class="d-flex flex-row justify-content-between p-3 mid">
+                        <div class="d-flex flex-column"><small class="text-muted mb-1">ENGINE</small>
+                            <div class="d-flex flex-row"><img src="https://imgur.com/iPtsG7I.png" width="35px" height="25px">
+                                <div class="d-flex flex-column ml-1"><small class="ghj">1.4-litre K14B engine</small></div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column"><small class="text-muted mb-2">HORSEPOWER</small>
+                            <div class="d-flex flex-row"><img src="https://imgur.com/J11mEBq.png">
+                                <h6 class="ml-1">103  hp&ast;</h6>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="mx-3 mt-3 mb-2"><button type="button" class="btn btn-danger btn-block"><small>SPECIFICATION</small></button></div>
+                </div>
+            </div>
+        </div>
+  
+        <div class="col-lg-4 col-md-6 col-sm-12 my-3">
+            <div class="card"> <img src="./Img/honda/honda-accord.jpg" class="card-img-top" width="100%">
+                <div class="card-body pt-0 px-0">
+                 
+                  
+                    <div class=" justify-content-between p-2">
+                     <h4>Honda Accord</h4>
+                     <span class="price">STARTING FROM PKR. 4,238,617.63 /-</span>
+                      
+                    </div>
+                    <div class="d-flex flex-row justify-content-between p-3 mid">
+                        <div class="d-flex flex-column"><small class="text-muted mb-1">ENGINE</small>
+                            <div class="d-flex flex-row"><img src="https://imgur.com/iPtsG7I.png" width="35px" height="25px">
+                                <div class="d-flex flex-column ml-1"><small class="ghj">2.0L 4-Cylinder </small></div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column"><small class="text-muted mb-2">HORSEPOWER</small>
+                            <div class="d-flex flex-row"><img src="https://imgur.com/J11mEBq.png">
+                                <h6 class="ml-1">192 hp&ast;</h6>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="mx-3 mt-3 mb-2"><button type="button" class="btn btn-danger btn-block"><small>SPECIFICATION</small></button></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 my-3">
+            <div class="card"> <img src="./Img/hyundai/hyundai elantra 2021.jpeg" class="card-img-top" width="100%">
+                <div class="card-body pt-0 px-0">
+                 
+                  
+                    <div class=" justify-content-between p-2">
+                     <h4>Hyundai Elantra</h4>
+                     <span class="price">STARTING FROM PKR. 3,362,488.35 /-</span>
+                      
+                    </div>
+                    <div class="d-flex  justify-content-between p-3 mid">
+                      <div class="d-flex flex-column"><small class="text-muted mb-1">ENGINE</small>
+                          <div class="d-flex flex-row"><img src="https://imgur.com/iPtsG7I.png" width="35px" height="25px">
+                              <div class="d-flex flex-column ml-1"><small class="ghj">2.0-liter I-4</small></div>
+                          </div>
+                      </div>
+                      <div class="d-flex flex-column"><small class="text-muted mb-2">HORSEPOWER</small>
+                          <div class="d-flex flex-row"><img src="https://imgur.com/J11mEBq.png">
+                              <h6 class="ml-1">154 hp&ast;</h6>
+                          </div>
+                      </div>
+                  </div> 
+                    <div class="mx-3 mt-3 mb-2"><button type="button" class="btn btn-danger btn-block"><small>SPECIFICATION</small></button></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 my-3">
+            <div class="card"> <img src="./Img/suzuki/suzuki baleno 2021.jpg" class="card-img-top" width="100%">
+              <div class="card-body pt-0 px-0">
+               
+                
+                  <div class=" justify-content-between p-2">
+                   <h4>Suzuki Baleno</h4>
+                   <span class="price">STARTING FROM PKR. 2,146,743.17 /-</span>
+                    
+                  </div>
+                  <div class="d-flex flex-row justify-content-between p-3 mid">
+                      <div class="d-flex flex-column"><small class="text-muted mb-1">ENGINE</small>
+                          <div class="d-flex flex-row"><img src="https://imgur.com/iPtsG7I.png" width="35px" height="25px">
+                              <div class="d-flex flex-column ml-1"><small class="ghj">1.2-litre VVT Petrol Engine</small></div>
+                          </div>
+                      </div>
+                      <div class="d-flex flex-column"><small class="text-muted mb-2">HORSEPOWER</small>
+                          <div class="d-flex flex-row"><img src="https://imgur.com/J11mEBq.png">
+                              <h6 class="ml-1">91 hp&ast;</h6>
+                          </div>
+                      </div>
+                  </div> 
+                  <div class="mx-3 mt-3 mb-2"><button type="button" class="btn btn-danger btn-block"><small>SPECIFICATION</small></button></div>
+              </div>
+          </div>
+          </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <!-- footer open -->
+  <div id="footer" class="footer"></div>
+  <script src="js/footer.js"></script>
+  <!-- footer close-->
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

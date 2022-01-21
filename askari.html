@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./CSS/style.css">
+  <title>AutoWorld</title>
+  <style>
+    .jumbotron {
+     
+      background-image: url(./Img/3\ bank.jpg);
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 500px;
+
+    }
+    .askari-text{
+      
+      margin: auto;
+      padding-top: 100px;
+      padding-right: 50px;
+      
+    }
+   .askari-sub-text{
+     margin: auto;
+    padding-right: 50px;
+
+   }
+
+
+    .calculate-input {
+      margin-top: 40px;
+      
+    }
+.submit-input input{
+  margin-top: 40px;
+    padding: 15px 50px;
+    background-color: #E10C1B;
+    color: #fff;
+    border: none;
+    font-weight: 700;
+    transition: background-color .3s;
+}
+
+.submit-input input:hover {
+	background-color: #002260;
+}
+
+.back-input input{
+  margin-top: 40px;
+    padding: 15px 50px;
+    background-color: #002260;
+    color: #fff;
+    border: none;
+    font-weight: 700;
+    transition: background-color .3s;
+}
+.back-input input:hover {
+	background-color: #E10C1B;
+}
+
+    
+  </style>
+</head>
+
+<body>
+  <!-- header open -->
+  <div id="header"></div>
+  <script src="Js/header.js"></script>
+  <!-- header close -->
+
+  <div class="jumbotron text-center">
+    <h1 class="askari-text text-white"><b>Askari Bank Car Finance</b></h1>
+    <h4 class="askari-sub-text text-white">AsK4Car.</h47>
+  </div>
+
+  <div class="container-fluid ">
+    <div class="row p-5">
+      <div class="col-lg-5 col-md-12 col-sm-12 pt-5 ">
+        <h1>What is AsK4Car?</h1>
+        <hr class="line w-100 mx-auto">
+        <p class="text-justify">
+          Askari Bank Limited is one of the Best Car financing banks in Pakistan.Ask4Car is Askari Bank's conventional auto financing solution, which can be used to finance new, used and imported vehicles. Askari Ijarah Bis Sayyarah is Askari Bank's Islamic car leasing solution for new, used and imported vehicles.Askari Bank Car Loan product offers a simple financing solution, allowing customers to purchase their own vehicle while benefiting from a wide range of features. This provides an affordable option that is simple to apply for and quick at the same time.
+        </p>
+      </div>
+      <div class="col-lg-7 col-md-12 col-sm-12 pt-5 text-center">
+        <img src="./Img/askari finance bg remove .jpg" class="img-fluid w-75" alt="...">
+
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid bg-light">
+    <div class="container pt-3">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <h2>Finance Policy :</h2>
+          <hr class="w-25">
+
+          <ul>
+            <li>Minimum doccuments and quick processing.</li>
+            <li>Tenure of Loan is from1 to 7 years.</li>
+            <li>Minimum Age for Borrower should be 21 years.</li>
+            <li>Maximum Age till Maturity of Loan is 62 years for Salaried and 65 years for SEB/SEP/Pensioner.</li>
+            <li>Minimum Salary/Income of borrower: Permanent Employees; Rs. 25,000/-  Contractual Employees; Rs. 40,000/-  Pensioners; Rs. 50,000/-</li>
+            <li>SEB/SEP branch customers 40000 Average Balance - SEB/SEP non branch customers 65000 Average Balance.</li> 
+            <li>Finance Amount (subject to DBR)	Rs. 200,000/- to Rs. 20 Million.</li>
+            <li>(Mark up rate)Branch Customer: 1 Year KIBOR + 4% - Non-Branch Customer: 1 Year KIBOR + 5%.</li>
+            <li>Imported: In case of imported vehicles, the bank shall not finance the vehicles older than 5 years.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- <h2 class="text-center pt-3">Use our Calculators to calculate your budget</h2> -->
+
+    <div class="container pb-3">
+      <div class="meezan-form-container">
+        <div class="meezan-head text-center p-5">
+          <h2 class="calculater-title">Use our Calculators to Compare Different Cars & Payment Plans!</h2>
+          <hr class="line w-75 mx-auto">
+        </div>
+        <div class="row">
+          <div class="col-lg-6 bg-white p-3">
+            <h2 class="text-center"><b>OPTION.1</b></h2>
+            <form>
+              <div class="form-group col-lg-12 pt-2">
+                <select id="car name" required class="form-control" name="martial status" aria-placeholder="Car Name">
+                  <option selected value="martial status">Select Car Name</option>
+                  <option value="old">Old</option>
+                  <option value="new">New</option>
+
+                </select>
+              </div>
+
+              <div class="form-group col-lg-12">
+                <select id="select vender" required class="form-control" name="martial status"
+                  aria-placeholder="select vender">
+                  <option selected value="Select Vendor">Select Vendor</option>
+                  <option value="Toyota">Toyota</option>
+                  <option value="Honda">Honda</option>
+                  <option value="Hyundai">Hyundai</option>
+                  <option value="Suzuki">Suzuki</option>
+                </select>
+              </div>
+              <div class="form-group col-lg-12">
+                <select id="tenure" required class="form-control" name="martial status"
+                  aria-placeholder="select tenure">
+                  <option selected value="tenure">Select Tenure</option>
+                  <option value="1">1 Year</option>
+                  <option value="2">2 Years</option>
+                  <option value="3">3 Years</option>
+                  <option value="4">4 Years</option>
+                  <option value="5">5 Years</option>
+                  <option value="6">6 Years</option>
+                  <option value="7">7 Years</option>
+                </select>
+
+              </div>
+              <div class="form-group col-lg-12">
+                <select id="deposite" required class="form-control" name="deposite"
+                aria-placeholder="deposite">
+                <option selected value="tenure">Select Deposite</option>
+                <option value="1">10%</option>
+                <option value="2">20%</option>
+                <option value="3">30%</option>
+                <option value="4">40%</option>
+                <option value="5">50%</option>
+                <option value="6">60%</option>
+                <option value="7">70%</option>
+              </select>
+              </div>
+
+              <div class="form-group col-lg-12">
+                <select id="car delivery" required class="form-control" name="martial status"
+                  aria-placeholder="car delivery">
+                  <option selected value="car delivery">Car Delivery</option>
+                  <option value="Immidiat">Immidiate</option>
+                  <option value="Booking">Booking</option>
+
+                </select>
+              </div>
+
+              <div class="calculate-input text-center">
+                <input type="submit" class="form-control btn btn-outline-danger w-50" name="submit" value="CALCULATE">
+              </div>
+
+            </form>
+          </div>
+
+          <div class="col-lg-6 bg-white p-3">
+            <h2 class="text-center"><b>OPTION.2</b></h2>
+            <form>
+              <div class="form-group col-lg-12">
+                <select id="car name" required class="form-control" name="martial status" aria-placeholder="Car Name">
+                  <option selected value="martial status">Select Car Name</option>
+                  <option value="old">Old</option>
+                  <option value="new">New</option>
+
+                </select>
+              </div>
+
+              <div class="form-group col-lg-12">
+                <select id="select vender" required class="form-control" name="martial status"
+                  aria-placeholder="select vender">
+                  <option selected value="Select Vendor">Select Vendor</option>
+                  <option value="Toyota">Toyota</option>
+                  <option value="Honda">Honda</option>
+                  <option value="Hyundai">Hyundai</option>
+                  <option value="Suzuki">Suzuki</option>
+                </select>
+              </div>
+              <div class="form-group col-lg-12">
+                <select id="tenure" required class="form-control" name="martial status"
+                  aria-placeholder="select tenure">
+                  <option selected value="tenure">Select Tenure</option>
+                  <option value="1">1 Year</option>
+                  <option value="2">2 Years</option>
+                  <option value="3">3 Years</option>
+                  <option value="4">4 Years</option>
+                  <option value="5">5 Years</option>
+                  <option value="6">6 Years</option>
+                  <option value="7">7 Years</option>
+                </select>
+
+              </div>
+              <div class="form-group col-lg-12">
+                <select id="deposite" required class="form-control" name="deposite"
+                aria-placeholder="deposite">
+                <option selected value="tenure">Select Deposite</option>
+                <option value="1">10%</option>
+                <option value="2">20%</option>
+                <option value="3">30%</option>
+                <option value="4">40%</option>
+                <option value="5">50%</option>
+                <option value="6">60%</option>
+                <option value="7">70%</option>
+              </select>
+              </div>
+
+              <div class="form-group col-lg-12">
+                <select id="car delivery" required class="form-control" name="martial status"
+                  aria-placeholder="car delivery">
+                  <option selected value="car delivery">Car Delivery</option>
+                  <option value="Immidiat">Immidiate</option>
+                  <option value="Booking">Booking</option>
+
+                </select>
+              </div>
+
+              <div class="calculate-input text-center">
+                <input type="submit" class="form-control btn btn-outline-danger w-50" name="submit" value="CALCULATE">
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    
+    <div class="row">
+        <div class="col lg-12">
+          <div class="back-input text-center">
+            <a href="bank list.html"><input type="submit" name="submit" class="W-50" value="BACK TO BANK LIST"></a>
+          </div>
+      
+        </div>
+      </div>
+
+
+<div class="row">
+  <div class="col lg-12">
+    <div class="submit-input text-center pb-3">
+      <input type="submit" name="submit" value="SUBMIT APPLICANT FORM">
+    </div>
+
+  </div>
+</div>
+
+  </div>
+
+
+
+
+
+
+
+  </div>
+
+
+  <script>
+
+    function calculate() {
+      var a, b, c, v;
+
+      a = document.getElementById("dep").value;
+      b = document.getElementById("ten").value;
+      c = (a * b) / 6;
+      document.getElementById("operation").value = c;
+
+    }
+  </script>
+
+
+
+
+  <!-- footer open -->
+  <div id="footer" class="footer"></div>
+  <script src="Js/footer.js"></script>
+  <!-- footer close-->
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
